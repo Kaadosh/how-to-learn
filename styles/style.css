@@ -21,21 +21,6 @@
 
 /* выше установили ограничения для секции */
 
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /*логотип яндекса*/
 .logo__place-header {
   position: absolute;
@@ -269,12 +254,14 @@
 }
 
 .table__cell_theme_dark {
+  color: white;
   position: relative;
   width: 200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   margin-bottom: 80px;
   z-index: 1;
+  margin-top: 80px;
 }
 
 .table__heading_theme_dark {
