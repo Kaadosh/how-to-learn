@@ -16,60 +16,72 @@
   display: flex;
   position: relative;
   background-color: #f2f2f2;
+  z-index: 1;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 /* выше установили ограничения для секции */
 
 /*логотип яндекса*/
-.logo__place-header {
+.logo__place_header {
   position: absolute;
   top: 30px;
   left: 64px;
   width: 228px;
   height: 32px;
-  z-index: index 1;
 }
 
 /*заголовок*/
 .header__title {
+  margin: 0;
+  padding: 0;
   width: 730px;
   align-self: center;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 1;
+  z-index: 2;
 }
 
+/*подзаголовок*/
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 3;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
+/*Картинка снова двойка*/
 .header__main-illustration {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
 }
 
+/*ссылка в шапке*/
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
+/*синий квадрат*/
 .header__square-pic {
+  position: absolute;
   width: 568px;
   height: 568px;
-  margin-top: 64px;
+  top: 64px;
+  right: 0;
+  z-index: -1;
   background-color: #2f80ed;
 }
 
@@ -80,6 +92,7 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*Блок две колоннки*/
 .two-colums {
   display: flex;
   justify-content: space-between;
@@ -87,6 +100,7 @@
   margin: 0 auto;
 }
 
+/*1я колоннка*/
 .two-colums__brief {
   width: 175px;
   margin: 0;
@@ -96,20 +110,27 @@
   color: #2f80ed;
 }
 
-
+/*я колоннка*/
 .two-colums__main-text {
   width: 80%;
   min-width: 784px;
 
 }
 
+/*текст*/
 .two-colums__paragraph {
-  margin-bottom: 30px;
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
+/*отступы у текста*/
+.two-colums__paragraph:nth-last-child(1n) {
+  margin-bottom: 30px;
+}
+
+/*выделение вывода*/
 .two-colums__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -118,13 +139,15 @@
 
 /* !Блок digits */
 .digits {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
+/*заголовок*/
 .section-title {
+  margin: 0px;
   margin-top: 100px;
   width: 60%;
   text-align: center;
@@ -135,6 +158,7 @@
   font-weight: 600;
 }
 
+/*подзаголовок*/
 .section-subtitle {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -147,22 +171,28 @@
   font-weight: normal;
 }
 
+/*таблицы*/
 .table {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   width: 1100px;
-  margin: 60 auto;
+  margin: 60px auto;
+  margin-bottom: 100px;
 }
 
+/*ячейка таблицы*/
 .table__cell {
   width: 250px;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 60px;
   padding-bottom: 60px;
 }
 
+/*заголовок таблицы*/
 .table__heading {
   text-align: left;
   line-height: 1.15;
@@ -172,6 +202,7 @@
 
 }
 
+/*текст таблицы*/
 .table__text {
   margin-top: 20px;
   margin-bottom: 0;
@@ -179,12 +210,6 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__span-accent {
-  display: block;
-  margin-top: 20px;
-  text-align: left;
 }
 
 /*!Блок Фейман*/
@@ -201,58 +226,65 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*заголовок*/
 .feyman__title {
   width: 648px;
   text-align: center;
-  margin: 100px auto;
+  margin: 100px auto 70px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
 }
 
+/*подзаголовок*/
 .feyman__subtitle {
+  margin: 0;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
 }
 
+/*ссылка*/
 .feyman__link {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 48px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  color: #2f80ed;
 }
 
 /*!Kayfman*/
 .kaufman {
   position: relative;
-  background-color: black;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 90px;
-  flex-wrap: wrap;
+  align-items: center;
   overflow: hidden;
+  z-index: 1;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*заголовок*/
 .section-title_theme_dark {
   color: white;
   margin-top: 90px;
   margin-bottom: 20px;
 }
 
+/*подзаголовок*/
 .section-subtitle_theme_dark {
   color: white;
   margin-bottom: 80px;
 }
 
+/*ячейки таблицы*/
 .table__cell_theme_dark {
   color: white;
   position: relative;
@@ -260,10 +292,10 @@
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 80px;
-  z-index: 1;
   margin-top: 80px;
 }
 
+/*заголовок ячейки таьлицы*/
 .table__heading_theme_dark {
   color: white;
   line-height: 1.15;
@@ -272,6 +304,7 @@
 
 }
 
+/*текст ячейки таблицы*/
 .table__text_theme_dark {
   color: white;
   line-height: 1.2;
@@ -279,49 +312,52 @@
   font-weight: normal;
 }
 
+/*треугольник*/
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   right: -210px;
-  bottom: 90px;
   width: 877px;
   height: 877px;
+  z-index: -1;
 }
 
-/*Footer* Господи,провести через пищеводную электрокардиостимуляцию при полной АВ-блокаде МАС+ было проще чем все это!!!*/
+/*Footer**/
 .footer {
+  box-sizing: border-box;
   padding: 60px 0 40px;
   margin: 0;
-  background-color: black;
+  background-color: #1f1f1f;
   min-height: 350px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*колоннки*/
 .footer__columns {
   display: flex;
-  margin-top: 60px;
   width: 90%;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
 }
 
+/*часть про лого и копирайт*/
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 50px;
 }
 
+/*логотип*/
 .logo__place-footer {
   width: 228px;
   height: 32px;
 }
 
+/*автор*/
 .footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
@@ -331,12 +367,15 @@
   font-weight: normal;
 }
 
+/*часть про "о нас"*/
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
 }
 
+/*заголовок*/
 .footer__column-heading {
+  margin: 0;
   color: white;
   margin-bottom: 20px;
   line-height: 30px;
@@ -344,6 +383,7 @@
   font-weight: 600;
 }
 
+/*ссылки*/
 .footer__column-links {
   color: white;
   padding: 0;
@@ -354,6 +394,7 @@
   list-style: none;
 }
 
+/*ссылка*/
 .footer__column-link {
   color: white;
   line-height: 30px;
@@ -362,10 +403,12 @@
   text-decoration: none;
 }
 
+/*соцсети*/
 .footer__column_content-social {
   margin-bottom: 16px;
 }
 
+/*иконки-соцсетей*/
 .footer__social-icon {
   padding-right: 10px;
   text-decoration: none;
