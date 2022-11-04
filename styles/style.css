@@ -102,7 +102,6 @@
 
 /*Блок две колоннки*/
 .two-colums {
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -185,7 +184,6 @@
 
 /*таблицы*/
 .table {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -290,12 +288,6 @@
 /*подзаголовок*/
 .section-subtitle_theme_dark {
   color: white;
-}
-
-.table__cell_theme_dark {
-  margin: 0;
-  padding: 0;
-  /*padding: 80 0 90 0;*/
 }
 
 /*ячейки таблицы*/
