@@ -23,7 +23,9 @@
 /* выше установили ограничения для секции */
 
 /*логотип яндекса*/
-.logo__place_header {
+.logo_place_header {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -60,6 +62,8 @@
 
 /*Картинка снова двойка*/
 .header__main-illustration {
+  margin: 0;
+  padding: 0;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -76,6 +80,8 @@
 
 /*синий квадрат*/
 .header__square-pic {
+  margin: 0;
+  padding: 0;
   position: absolute;
   width: 568px;
   height: 568px;
@@ -87,6 +93,8 @@
 
 /*!Блок description*/
 .description {
+  margin: 0;
+  padding: 0;
   margin-top: 100px;
   margin-bottom: 100px;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
@@ -94,6 +102,8 @@
 
 /*Блок две колоннки*/
 .two-colums {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -110,7 +120,7 @@
   color: #2f80ed;
 }
 
-/*я колоннка*/
+/*2я колоннка*/
 .two-colums__main-text {
   width: 80%;
   min-width: 784px;
@@ -120,14 +130,15 @@
 /*текст*/
 .two-colums__paragraph {
   margin: 0;
+  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
 /*отступы у текста*/
-.two-colums__paragraph:nth-last-child(1n) {
-  margin-bottom: 30px;
+.two-colums__paragraph:nth-of-type(3n) {
+  margin-bottom: 0;
 }
 
 /*выделение вывода*/
@@ -160,8 +171,9 @@
 
 /*подзаголовок*/
 .section-subtitle {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
-  margin-bottom: 60px;
   width: 60%;
   text-align: center;
   margin-left: auto;
@@ -173,6 +185,7 @@
 
 /*таблицы*/
 .table {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -180,16 +193,13 @@
   list-style: none;
   width: 1100px;
   margin: 60px auto;
-  margin-bottom: 100px;
 }
 
 /*ячейка таблицы*/
 .table__cell {
   width: 250px;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /*заголовок таблицы*/
@@ -230,7 +240,7 @@
 .feyman__title {
   width: 648px;
   text-align: center;
-  margin: 100px auto 70px;
+  margin: 100px auto 100px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -275,24 +285,27 @@
 .section-title_theme_dark {
   color: white;
   margin-top: 90px;
-  margin-bottom: 20px;
 }
 
 /*подзаголовок*/
 .section-subtitle_theme_dark {
   color: white;
-  margin-bottom: 80px;
+}
+
+.table__cell_theme_dark {
+  margin: 0;
+  padding: 0;
+  /*padding: 80 0 90 0;*/
 }
 
 /*ячейки таблицы*/
 .table__cell_theme_dark {
+  margin: 0;
+  padding: 0;
   color: white;
   position: relative;
   width: 200px;
-  margin-left: auto;
-  margin-right: 0;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 /*заголовок ячейки таьлицы*/
@@ -352,7 +365,7 @@
 }
 
 /*логотип*/
-.logo__place-footer {
+.logo_place-footer {
   width: 228px;
   height: 32px;
 }
