@@ -136,7 +136,7 @@
 }
 
 /*отступы у текста*/
-.two-colums__paragraph:nth-of-type(3n) {
+.two-colums__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -190,7 +190,7 @@
   justify-content: space-between;
   list-style: none;
   width: 1100px;
-  margin: 60px auto;
+  margin: 0 auto;
 }
 
 /*ячейка таблицы*/
@@ -238,7 +238,7 @@
 .feyman__title {
   width: 648px;
   text-align: center;
-  margin: 100px auto 100px;
+  margin: 100px auto 70px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -248,7 +248,6 @@
 .feyman__subtitle {
   margin: 0;
   text-align: center;
-  margin-top: 30px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -320,6 +319,7 @@
 /*треугольник*/
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   position: absolute;
   right: -210px;
   width: 877px;
@@ -357,7 +357,7 @@
 }
 
 /*логотип*/
-.logo_place-footer {
+.logo_place_footer {
   width: 228px;
   height: 32px;
 }
