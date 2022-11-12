@@ -1,0 +1,11 @@
+.two-colums {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.two-colums__paragraph:last-child {
+  margin-bottom: 0;
+}

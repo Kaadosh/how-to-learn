@@ -1,0 +1,7 @@
+.cards__item {
+  margin-right: 100px;
+  width: 250px;
+  text-align: center;
+}
+
+.cards__item:last-child {}
