@@ -1,7 +1,5 @@
 .cards__item {
   margin-right: 100px;
-  width: 250px;
+  width: calc(100%/5);
   text-align: center;
 }
-
-.cards__item:last-child {}
